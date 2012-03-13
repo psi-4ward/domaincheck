@@ -3,7 +3,7 @@
 /**
  *
  * PHP version 5
- * @copyright  4ward.media 2011
+ * @copyright  4ward.media 2012
  * @author     Christoph Wiechert <christoph.wiechert@4wardmedia.de>
  * @package    Domaincheck
  * @license	   LGPL

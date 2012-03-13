@@ -3,23 +3,23 @@
 /**
  *
  * PHP version 5
- * @copyright  4ward.media 2011
+ * @copyright  4ward.media 2012
  * @author     Christoph Wiechert <christoph.wiechert@4wardmedia.de>
  * @package    Domaincheck
  * @license	   LGPL
  * @filesource
  */
 
-$GLOBALS['TL_LANG']['domaincheck']['tldError'] 		= '<p class="error">Bitte wählen Sie mindestens eine Top-Level-Domain.</p>';
-$GLOBALS['TL_LANG']['domaincheck']['domainError'] 	= '<p class="error">Bitte geben Sie eine gültige Domain an.</p>';
+$GLOBALS['TL_LANG']['domaincheck']['tldError'] 		= '<p class="error">Please choose at least one top-level domain.</p>';
+$GLOBALS['TL_LANG']['domaincheck']['domainError'] 	= '<p class="error">Please enter a valid domain.</p>';
 $GLOBALS['TL_LANG']['domaincheck']['domain'] 		= 'Domain';
-$GLOBALS['TL_LANG']['domaincheck']['tld'] 			= 'Top-Level-Domain';
-$GLOBALS['TL_LANG']['domaincheck']['submit'] 		= 'Domains prüfen';
-$GLOBALS['TL_LANG']['domaincheck']['ajaxRunning']	= 'Domains werden abgefragt...';
+$GLOBALS['TL_LANG']['domaincheck']['tld'] 			= 'top-level domain';
+$GLOBALS['TL_LANG']['domaincheck']['submit'] 		= 'check domains';
+$GLOBALS['TL_LANG']['domaincheck']['ajaxRunning']	= 'checking domains...';
 
-$GLOBALS['TL_LANG']['domaincheck']['free']			= 'frei';
-$GLOBALS['TL_LANG']['domaincheck']['registred']		= 'belegt';
-$GLOBALS['TL_LANG']['domaincheck']['probablyFree']	= 'wahrscheinlich frei';
-$GLOBALS['TL_LANG']['domaincheck']['probablyFreeTip'] = 'Es konnte keine direkte Abfrage an den Registrar durchgeführt werden.';
+$GLOBALS['TL_LANG']['domaincheck']['free']			= 'free';
+$GLOBALS['TL_LANG']['domaincheck']['registred']		= 'registred';
+$GLOBALS['TL_LANG']['domaincheck']['probablyFree']	= 'propbably free';
+$GLOBALS['TL_LANG']['domaincheck']['probablyFreeTip'] = 'It was not able to request the state form the registrar.';
 
 ?>

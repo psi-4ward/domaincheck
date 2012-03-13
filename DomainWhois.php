@@ -1,15 +1,22 @@
 <?php 
 
 /**
- * DomainWhois Class
- * * domain whois queries
- * * ip whois queries
- * * domain-free check
- * 
- * @copyright by 4ward.media - http://www.4wardmedia.de
- * @author Christoph Wiechert <wio@psitrax.de>
- * @license LGPL
+ *
+ * PHP version 5
+ * @copyright  4ward.media 2012
+ * @author     Christoph Wiechert <christoph.wiechert@4wardmedia.de>
+ * @package    Domaincheck
+ * @license	   LGPL
+ * @filesource
  */
+
+/*
+ * DomainWhois Class
+ * domain whois queries
+ * ip whois queries
+ * domain-free check
+*/
+
 
 class DomainWhois extends System
 {
@@ -90,13 +97,14 @@ class DomainWhois extends System
 		
 		return !preg_match($this->whoisservers[$tld]['notRegistredRegex'],$result);
 	}
-	
-	
+
+
 	/**
 	 * Domain Lookup
-	 * this function tries to find the appropriate Whois server 
-	 * @param str $domain Domainname 
-	 * @return str
+	 * this function tries to find the appropriate Whois server
+	 * @param string $domain Domainname
+	 * @throws Exception
+	 * @return string
 	 */
 	public function lookupDomain($domain)
 	{
@@ -107,12 +115,14 @@ class DomainWhois extends System
 		
 		return $result;
 	}
-	
+
+
 	/**
 	 * Querys the whois-server and returns its answer
-	 * @param $whoisserver ulr or ip from the server
-	 * @param $domain domain
-	 * @return str answer
+	 * @param string $whoisserver ulr or ip from the server
+	 * @param string $domain domain
+	 * @throws Exception
+	 * @return string answer
 	 */
 	public function query($whoisserver, $domain)
 	{
